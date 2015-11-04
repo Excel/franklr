@@ -1,0 +1,7 @@
+profiles = [
+  {
+    "name" : "Franklin",
+    "age" : "24",
+    "blurb": "I'm just a normal guy hmu ;)"
+  }
+];
