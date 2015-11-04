@@ -1,0 +1,173 @@
+/* ===============================================
+========== USE @font-face to load fonts ==========
+==================================================*/
+
+/*These are all of the custom fonts you will have to link.*/
+@font-face {
+font-family:"ff-dagny-web-pro-1";
+src:url("../fonts/DagnyWebPro.eot");
+}
+
+@font-face {
+font-family:"ff-dagny-web-pro-light";
+src:url(../fonts/DagnyWebPro-Xlight.woff) format("woff");
+}
+
+@font-face {
+font-family:"ff-dagny-web-pro-2";
+src:url(../fonts/DagnyWebPro.woff) format("woff");
+}
+
+@font-face {
+font-family:"ff-dagny-web-pro-bold";
+src:url(../fonts/DagnyWebPro-Bold.woff) format("woff");
+}
+
+/* ===============================================
+================ Some TA stylingÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ ================
+==================================================*/
+
+/*The general width of the layout; scrollbars will appear if window is less wide.*/
+body{
+position: relative;
+margin-left: 60px;
+margin-right: 60px;
+min-width:1366px;
+min-height:734px;
+background-size: cover;
+padding: 0px;
+
+background-image:url('../img/background.jpg');
+
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+/*Take note of how to apply use of a custom font*/
+h1,h2,h3,h4,h5,p,ul,li {
+padding:0;
+margin:0;
+font-family:"ff-dagny-web-pro-1","ff-dagny-web-pro-2","Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+#header h1{
+	padding: 10px 30px 0px 0px;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 40px;
+	color: #009999;
+	text-align: center;
+  margin:0 auto;
+
+}
+
+
+#franklr {
+	background-color: rgba(128, 128, 128, 0.6);
+	border: 3px #000000 solid;
+	max-width: 500px;
+	width: 500px;
+	max-height: 550px;
+	height: 550px;
+	text-align: center;
+  margin:0 auto;
+
+
+	font-family:"ff-dagny-web-pro-1";
+	font-weight: bold;
+}
+
+#panel {
+	background-color: rgba(255, 255, 255, 1);
+	border: 3px #000000 solid;
+	max-width: 500px;
+	width: 350px;
+	max-height: 550px;
+	height: 550px;
+	text-align: center;
+	margin: 0px 30px 0px 0px;
+	background-repeat: repeat;
+	overflow-y: auto;
+	background-image:url('../img/feed.jpg');
+	background-repeat: no-repeat;
+	float: right;
+
+}
+
+#panel p{
+	font-weight: bold;	border-top: 1px #000000 solid;
+	color: #000000;
+}
+
+#panel p:hover{
+		background-color: rgba(255, 255, 255, 0.3);
+}
+
+#panel a{
+	color: #000000;
+	text-decoration: none;
+}
+
+
+#panel ul{
+	background-color: rgba(128, 128, 128, 0.9);
+	list-style: none;
+	font-family:"ff-dagny-web-pro-1";
+}
+
+#panel li{
+	list-style: none;
+	text-align: left;
+	vertical-align: middle;
+	border-top: 1px #000000 solid;
+
+	min-height: 48px;
+	padding: 0px 10px 0px 10px;
+}
+#panel li div{
+	padding-left: 60px;
+}
+
+
+#panel li:hover{
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+#panel li img{
+	float: left;
+	clear: right;
+	width: 48px;
+	padding-right: 10px;
+	vertical-align: middle;
+	margin-top: 10px;
+	height: 48px;
+}
+
+#panel li a:link {
+	color:#000000;
+}
+#panel li a:visited {
+	color:#000000;
+}
+#panel li a:hover {
+	color:#0000FF;
+}
+
+#franklr img {
+	height: 300px;
+	width: 300px;
+	text-align: center;
+  margin:0 auto;
+	border: 3px rgba(128, 128, 128, 1) solid;
+}
+
+#footer{
+	text-decoration: none;
+	text-align: left;
+}
+
+
+#footer a{
+	text-decoration: none;
+}
