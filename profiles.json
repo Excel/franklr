@@ -1,9 +1,22 @@
 {
     "profiles": [
         {
-            "name": "Franklin",
-            "age": "24",
-            "blurb": "I'm just a normal guy hmu ;)"
-        }
+            "name": "Brian",
+            "age": "23",
+            "blurb": "konnichiwa darkness-san my old tomodachi",
+            "img": "brian.jpg"
+        },
+        {
+            "name": "Karen",
+            "age": "23",
+            "blurb": "I just want a man with a daijobu mustache",
+            "img": "karen.jpg"
+        },
+        {
+            "name": "Ms. Jessica",
+            "age": "??",
+            "blurb": "I love teaching my children",
+            "img": "jessica.png"
+        }        
     ]
 }
