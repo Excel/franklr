@@ -7,10 +7,34 @@
             "img": "brian.jpg"
         },
         {
-            "name": "Karen",
+            "name": "Zhu Li Moonstache",
             "age": "23",
-            "blurb": "I just want a man with a daijobu mustache",
-            "img": "karen.jpg"
+            "blurb": "Occupation: Assistant Interests: Doing the thing",
+            "img": "karen_tran.png"
+        },
+        {
+            "name": "Alex",
+            "age": "37 years young lol",
+            "blurb": "Scorpio. Divorced w/ two kids. I enjoy long walks on the beach. Part-time yoga instructor. 34-DD ;)",
+            "img": "alex_little.png"
+        },
+        {
+            "name": "Hanson",
+            "age": "23 +1 YearS OLd.",
+            "blurb": "nERdy and rAndOm and ExcItiNg. loVeS sLacKliNing AnD unKemPt MUstAches aNd kaWAII PhoNe cHaRMS.",
+            "img": "hanson_ngo.jpg"
+        },
+        {
+            "name": "Lenny",
+            "age": "23",
+            "blurb": "I'm looking for someone to set balls for me to hit",
+            "img": "lenny_li.jpg"
+        },
+        {
+            "name": "John",
+            "age": "23",
+            "blurb": "watashi just wanaa man with a daijobu mustache, sumimasen",
+            "img": "john_tran.jpg"
         },
         {
             "name": "Ms. Jessica",
