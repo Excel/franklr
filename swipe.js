@@ -32,7 +32,7 @@ function matchPopup() {
 function addMatch() {
   matched_profiles.push(next_profile);
 
-  if (next_profile.age === 17) {
+  if (next_profile.age == 17) {
     spam = next_profile;
     spamFeed();
   }
