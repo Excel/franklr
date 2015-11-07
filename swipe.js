@@ -18,7 +18,6 @@ function dislike() {
   } else {
     popup.innerHTML ='<img src="img/fxck.png">';
   }
-  disliked_profiles.push(next_profile);
   matchPopup();
   updateProfile();
 }
@@ -57,11 +56,10 @@ function unmatch() {
   spam = null;
   spamFeed();
   shuffle(matched_profiles);
-  shuffle(disliked_profiles);
 
   clearInterval(dispID);
   var empty_set = available_profiles.length === 0 && empty;
-  available_profiles = available_profiles.concat(matched_profiles).concat(disliked_profiles);
+  available_profiles = available_profiles.concat(matched_profiles);
   matched_profiles = [];
 
   var total = document.getElementById('total');
