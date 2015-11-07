@@ -51,15 +51,12 @@ font-family:"ff-dagny-web-pro-1","ff-dagny-web-pro-2","Helvetica Neue", Helvetic
 
 }
 
-#header h1{
-	padding: 10px 30px 0px 0px;
-	vertical-align: middle;
-	font-weight: bold;
-	font-size: 40px;
-	color: #009999;
+#header {
 	text-align: center;
-  margin:0 auto;
-
+}
+#header img{
+	height: 60px;
+  margin: 0 auto;
 }
 
 
@@ -220,7 +217,7 @@ font-family:"ff-dagny-web-pro-1","ff-dagny-web-pro-2","Helvetica Neue", Helvetic
 	display:none;
 	position:absolute;
 	margin:0 auto;
-	top: 10%;
+	top: 5%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 9999;
