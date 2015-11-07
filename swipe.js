@@ -29,7 +29,12 @@ function addMatch() {
       + '<br />'
       + '<strong>' + profile.name + '</strong> '
       + '</div>';
-  ul.insertBefore(li, ul.firstChild);
+  if (ul.childNodes.length > 1) {
+    ul.insertBefore(li, ul.firstChild.nextSibling);
+  } else {
+    ul.appendChild(li);
+  }
+  ul.firstChild.innerHTML = "<strong>" + matched_profiles.length + " Matchstaches</strong>";
 }
 
 function unmatch() {
@@ -38,7 +43,7 @@ function unmatch() {
   available_profiles = available_profiles.concat(matched_profiles);
   matched_profiles = [];
   var ul = document.getElementById('matches');
-  ul.innerHTML = "";
+  ul.innerHTML = "<li><strong>0 Matchstaches</strong></li>";
 
   if (empty_set) {
     addButtons();
