@@ -1,11 +1,24 @@
 function like() {
   $("#popup").hide();
+  document.getElementById("popup").innerHTML =
+    	'<img src="img/match.png">';
   matchPopup();
   addMatch();
   updateProfile();
 }
 
 function dislike() {
+  var popup = document.getElementById("popup");
+  var rand = Math.random() * 3;
+  if (rand < 1) {
+    popup.innerHTML = '<img src="img/rejected.png">';
+
+  } else if (rand < 2) {
+      popup.innerHTML ='<img src="img/pwnt.png">';
+  } else {
+    popup.innerHTML ='<img src="img/fxck.png">';
+  }
+  matchPopup();
   updateProfile();
 }
 
