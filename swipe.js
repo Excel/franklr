@@ -58,6 +58,8 @@ function unmatch() {
   spamFeed();
   shuffle(matched_profiles);
   shuffle(disliked_profiles);
+
+  clearInterval(dispID);
   var empty_set = available_profiles.length === 0 && empty;
   available_profiles = available_profiles.concat(matched_profiles).concat(disliked_profiles);
   matched_profiles = [];
