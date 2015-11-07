@@ -7,6 +7,11 @@ var recent_id = -1;
 var running = true;
 var dispID;
 
+var spam = false;
+var spamID;
+
+var usedNames = [];
+
 
 
 // This code will be executed when the page finishes loading
@@ -38,6 +43,14 @@ function toggleFeed() {
   }
 
   running = !running;
+}
+
+function spamFeed() {
+  if (spam !== null) {
+    spamID = window.setInterval(spamFunction, 4000);
+  } else {
+    clearInterval(spamID);
+  }
 }
 
 function disp(){
@@ -82,10 +95,14 @@ function disp(){
       li.className = "message";
     }
 
-    var specify = (profile.name in feed_updates[message_idx]) ?
+    console.log(feed_updates[message_idx]);
+    var specify = (profile.name in feed_updates[message_idx] && !(profile.name in usedNames)) ?
       profile.name :
       "everyone";
 
+    if (specify === profile.name) {
+      usedNames.push(profile.name);
+    }
     var choices = feed_updates[message_idx][specify];
     var message = choices[Math.floor(Math.random() * choices.length)];
 
@@ -99,6 +116,58 @@ function disp(){
         + message
         + '<br />' + timestamp + '</div>';
 		ul.insertBefore(li, ul.firstChild);
+
+  }
+
+  function spamFunction() {
+    if (spam === null) {
+      return;
+    }
+    if (matched_profiles.length === 0 && feed_updates.length === 0) {
+      return;
+    }
+  	var ul = document.getElementById('franklr_feed');
+    recent_id = rand_index;
+  		//THIRTY IS ENOUGH
+  		while(ul.childNodes.length > 30){
+  			ul.removeChild(ul.lastChild);
+
+  		}
+
+      var timestamp = Date();
+
+      var profile = spam;
+
+      var header_text = "";
+      var message_chance = Math.random();
+      var message_idx = "";
+
+      var li = document.createElement('li');
+
+      if (message_chance < 0.5) {
+        header_text = "STATUS UPDATE:";
+        message_idx = "statuses";
+        li.className = "status";
+      } else {
+        header_text = "NEW MESSAGE:";
+        message_idx = "messages";
+        li.className = "message";
+      }
+
+      var specify = "spam";
+      var choices = feed_updates[message_idx][specify];
+      var message = choices[Math.floor(Math.random() * choices.length)];
+
+
+  		li.innerHTML = '<img src=img/' + profile.img + '>'
+  				+ '<div id ="right-hold">'
+          + '<strong>' + header_text + '</strong> '
+          + '<br />'
+          + '<strong>' + profile.name + '</strong> '
+          + '<br />'
+          + message
+          + '<br />' + timestamp + '</div>';
+  		ul.insertBefore(li, ul.firstChild);
 
   }
 

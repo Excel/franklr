@@ -32,6 +32,11 @@ function matchPopup() {
 function addMatch() {
   matched_profiles.push(next_profile);
 
+  if (next_profile.age === 17) {
+    spam = next_profile;
+    spamFeed();
+  }
+
   var ul = document.getElementById('matches');
   var profile = next_profile;
 
@@ -48,6 +53,8 @@ function addMatch() {
 }
 
 function unmatch() {
+  spam = null;
+  spamFeed();
   shuffle(matched_profiles);
   var empty_set = available_profiles.length === 0 && empty;
   available_profiles = available_profiles.concat(matched_profiles);
