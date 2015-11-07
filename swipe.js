@@ -29,12 +29,9 @@ function addMatch() {
       + '<br />'
       + '<strong>' + profile.name + '</strong> '
       + '</div>';
-  if (ul.childNodes.length > 1) {
-    ul.insertBefore(li, ul.firstChild.nextSibling);
-  } else {
-    ul.appendChild(li);
-  }
-  ul.firstChild.innerHTML = "<strong>" + matched_profiles.length + " Matchstaches</strong>";
+  ul.insertBefore(li, ul.firstChild);
+  var total = document.getElementById('total');
+  total.innerHTML = matched_profiles.length + ' Matchstaches';
 }
 
 function unmatch() {
@@ -42,8 +39,11 @@ function unmatch() {
   var empty_set = available_profiles.length === 0 && empty;
   available_profiles = available_profiles.concat(matched_profiles);
   matched_profiles = [];
+
+  var total = document.getElementById('total');
+  total.innerHTML = '0 Matchstaches';
   var ul = document.getElementById('matches');
-  ul.innerHTML = "<li><strong>0 Matchstaches</strong></li>";
+  ul.innerHTML = "";
 
   if (empty_set) {
     addButtons();

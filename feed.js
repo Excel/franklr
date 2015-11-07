@@ -31,10 +31,10 @@ function toggleFeed() {
   var button = document.getElementById('toggle');
   if (running) {
     clearInterval(dispID);
-    button.value = "Play";
+    button.textContent = "Play";
   } else {
     dispID = window.setInterval(disp, 4000);
-    button.value = "Pause";
+    button.textContent = "Pause";
   }
 
   running = !running;
