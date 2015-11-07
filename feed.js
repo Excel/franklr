@@ -4,12 +4,15 @@
 */
 var recent_id = -1;
 
+var running = true;
+var dispID;
+
 
 
 // This code will be executed when the page finishes loading
 window.addEventListener('load', function(){
     //display one tweet every 3000 milliseconds or so
-    var dispID = window.setInterval(disp, 4000);
+    dispID = window.setInterval(disp, 4000);
 
 
     //do it initially so it doesn't wait
@@ -24,34 +27,14 @@ window.addEventListener('load', function(){
 
 }, false);
 
+function toggleFeed() {
+  if (running) {
+    clearInterval(dispID);
+  } else {
+    dispID = window.setInterval(disp, 4000);
+  }
 
-function req(theURL, callback){
-				// create a request object
-				var request = new XMLHttpRequest();
-
-				// specify the HTTP method, URL, and asynchronous flag
-				request.open('GET', theURL, true);
-
-				// add an event handler
-				request.addEventListener('load', function(e){
-				    if (request.status == 200) {
-				        // do something with the loaded content
-				        var content = request.responseText;
-						var data = JSON.parse(content);
-						// we have an unordered list of Tweets
-
-						for(var i = 0; i < data.length; i++){
-								tweets.push(data[i]);
-						}
-
-				    } else {
-				        // something went wrong, check the request status
-				        // hint: 403 means Forbidden, maybe you forgot your username?
-				    }
-				}, false);
-
-				// start the request, optionally with a request body for POST requests
-				request.send(null);
+  running = !running;
 }
 
 function disp(){
@@ -84,12 +67,16 @@ function disp(){
     var message_chance = Math.random();
     var message_idx = "";
 
+    var li = document.createElement('li');
+
     if (message_chance < 0.5) {
       header_text = "STATUS UPDATE:";
       message_idx = "statuses";
+      li.className = "status";
     } else {
       header_text = "NEW MESSAGE:";
       message_idx = "messages";
+      li.className = "message";
     }
 
     var specify = (profile.name in feed_updates[message_idx]) ?
@@ -100,7 +87,6 @@ function disp(){
     var message = choices[Math.floor(Math.random() * choices.length)];
 
 
-		var li = document.createElement('li');
 		li.innerHTML = '<img src=img/' + profile.img + '>'
 				+ '<div id ="right-hold">'
         + '<strong>' + header_text + '</strong> '

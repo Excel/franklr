@@ -20,20 +20,30 @@
 	<div id="header">
     	<h1>franklr</h1>
   </div>
+  <div id="popup">
+      <img src="http://i.imgur.com/cVJrCHU.jpg" alt="popup">
+  </div>
   <div style='clear: both;'>
+      <div id="panel" style="float: left">
+      	<h1>Your Matchstaches
+          <button id="unfollow" onclick="unmatch();">Reset Matches</button></h1>
+          <ul id="matches"></ul>
+      </div>
     <div id="panel">
-    	<h1>Your Feed</h1>
+    	<h1>Your Feed <button id="toggle" onclick="toggleFeed();">Pause</button></h1>
         <ul id="franklr_feed"></ul>
     </div>
       <div id="franklr">
         <div id="picture"></div>
-        <div id="username"></div>
-        <div id="age"></div>
-        <div id="distance"></div>
+        <div id="name_container">
+          <div id="username"></div>, <div id="age"></div>
+        </div>
+        <div id="about"></div>
         <div id="blurb"></div>
-
-        <button id="dislike" onclick="dislike();">Dislike</button>
-        <button id="like" onclick="like();">Like</button>
+        <div id="buttons">
+          <button id="dislike" onclick="dislike();">Dislike</button>
+          <button id="like" onclick="like();">Like</button>
+        </div>
       </div>
   </div>
 

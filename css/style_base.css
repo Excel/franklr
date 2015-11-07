@@ -64,12 +64,12 @@ font-family:"ff-dagny-web-pro-1","ff-dagny-web-pro-2","Helvetica Neue", Helvetic
 
 
 #franklr {
-	background-color: rgba(128, 128, 128, 0.6);
+	background-color: rgba(255, 255, 255, 0.6);
 	border: 3px #000000 solid;
-	max-width: 500px;
-	width: 500px;
-	max-height: 550px;
-	height: 550px;
+	max-width: 320px;
+	width: 320px;
+	max-height: 600px;
+	height: 600px;
 	text-align: center;
   margin:0 auto;
 
@@ -82,9 +82,9 @@ font-family:"ff-dagny-web-pro-1","ff-dagny-web-pro-2","Helvetica Neue", Helvetic
 	background-color: rgba(255, 255, 255, 1);
 	border: 3px #000000 solid;
 	max-width: 500px;
-	width: 350px;
-	max-height: 550px;
-	height: 550px;
+	width: 400px;
+	max-height: 600px;
+	height: 600px;
 	text-align: center;
 	margin: 0px 30px 0px 0px;
 	background-repeat: repeat;
@@ -92,7 +92,6 @@ font-family:"ff-dagny-web-pro-1","ff-dagny-web-pro-2","Helvetica Neue", Helvetic
 	background-image:url('../img/feed.jpg');
 	background-repeat: no-repeat;
 	float: right;
-
 }
 
 #panel p{
@@ -104,33 +103,38 @@ font-family:"ff-dagny-web-pro-1","ff-dagny-web-pro-2","Helvetica Neue", Helvetic
 		background-color: rgba(255, 255, 255, 0.3);
 }
 
-#panel a{
-	color: #000000;
-	text-decoration: none;
-}
-
-
-#panel ul{
+#panel ul {
 	background-color: rgba(128, 128, 128, 0.9);
 	list-style: none;
 	font-family:"ff-dagny-web-pro-1";
 }
 
-#panel li{
+#panel li {
 	list-style: none;
 	text-align: left;
 	vertical-align: middle;
 	border-top: 1px #000000 solid;
 
-	min-height: 48px;
+	min-height: 68px;
 	padding: 0px 10px 0px 10px;
+}
+
+#unmatch {
+	float: left;
+	margin: auto 5px;
+	height: 10px;
+	margin-top: 29px;
+	margin-right: 5px;
+	margin-left: 0px;
+	width: 5px;
+	text-align: center;
 }
 #panel li div{
 	padding-left: 60px;
 }
 
 
-#panel li:hover{
+#panel li:hover, #panel li.message:hover{
 	background-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -144,6 +148,10 @@ font-family:"ff-dagny-web-pro-1","ff-dagny-web-pro-2","Helvetica Neue", Helvetic
 	height: 48px;
 }
 
+#panel li.message {
+		background-color: rgba(200, 200, 200, 0.6);
+}
+
 #panel li a:link {
 	color:#000000;
 }
@@ -154,14 +162,49 @@ font-family:"ff-dagny-web-pro-1","ff-dagny-web-pro-2","Helvetica Neue", Helvetic
 	color:#0000FF;
 }
 
+#name_container {
+	display: inline-block;
+	font-size: 22px;
+	width: 300px;
+	height: 35px;
+	text-align: left;
+  margin: 10px auto 0;
+}
+
+#age {
+	font-weight: normal;
+}
+#username, #age {
+	display: inline-block;
+	text-align: left;
+	font-size: 24px;
+
+}
+
+#about{
+	width: 300px;
+	text-align: left;
+  margin:0 auto;
+}
+
+#blurb {
+	width: 300px;
+	height: 100px;
+	text-align: left;
+  margin:0 auto;
+	font-weight: normal;
+}
 #franklr img {
 	height: 300px;
 	width: 300px;
 	text-align: center;
-  margin:0 auto;
+  margin: 10px auto;
 	border: 3px rgba(128, 128, 128, 1) solid;
 }
 
+#franklr #picture {
+	background-color: rgba(64, 64, 64, 0.5);
+}
 #footer{
 	text-decoration: none;
 	text-align: left;
@@ -170,4 +213,22 @@ font-family:"ff-dagny-web-pro-1","ff-dagny-web-pro-2","Helvetica Neue", Helvetic
 
 #footer a{
 	text-decoration: none;
+}
+
+#popup {
+	display:none;
+	position:absolute;
+	margin:0 auto;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;
+}
+
+.hidden {
+	display: none;
+}
+
+#name_container.hidden {
+	font-size: 0px;
 }

@@ -1,46 +1,124 @@
 {
     "profiles": [
         {
-            "name": "Brian",
-            "age": "23",
-            "blurb": "konnichiwa darkness-san my old tomodachi",
-            "img": "brian.jpg"
-        },
-        {
-            "name": "Zhu Li Moonstache",
-            "age": "23",
-            "blurb": "Occupation: Assistant Interests: Doing the thing",
-            "img": "karen_tran.png"
-        },
-        {
             "name": "Alex",
             "age": "37 years young lol",
             "blurb": "Scorpio. Divorced w/ two kids. I enjoy long walks on the beach. Part-time yoga instructor. 34-DD ;)",
-            "img": "alex_little.png"
+            "img": "Alex Little.png"
+        },
+        {
+            "name": "Bill",
+            "age": "23",
+            "blurb": "I'll show you mine if you show me yours.  It's ok Franklin, everyone makes mistakes.",
+            "img": "Bill Yu.jpg"
+        },
+        {
+            "name": "Brian",
+            "age": "23",
+            "blurb": "I'm looking for someone to support me in league, and in bed ;)  DIAMOND OR GTFO",
+            "img": "Brian Yu.jpg"
+        },
+        {
+            "name": "Danett",
+            "age": "23",
+            "blurb": "I got a blank space baby. And I'll write your name.",
+            "img": "Danett Song.jpg"
+        },
+        {
+            "name": "Duyen",
+            "age": "23",
+            "blurb": "I really like to just chill and watch movies, but outdoor adventures like hiking and snowboarding are also exciting. My dream is to marry rich so that I never have to work again and only do the things that interest me. So if you're not rich, don't bother me. You can easily win my heart over with food and places to sleep.",
+            "img": "Duyen Le.jpg"
+        },
+        {
+            "name": "Elise",
+            "age": "23",
+            "blurb": "Looking for waifus and husbandos, hypermaxed #297 Must have high stamina and be able to play day and night. ID: 357 612 361 Must love dogs, KH, FF, PAD, and cheese #glutenfree",
+            "img": "Elise Truong.jpg"
+        },
+        {
+            "name": "Han",
+            "age": "95",
+            "blurb": "How desperately do I require a soulmate on this safeground of lovers who can bring down the heavens with the mere mention of their mustache - woe is me to forever be lonely shall I not find one suited for this conquest in which I do speak of, for I am Han.",
+            "img": "Han Kim.jpg"
         },
         {
             "name": "Hanson",
             "age": "23 +1 YearS OLd.",
             "blurb": "nERdy and rAndOm and ExcItiNg. loVeS sLacKliNing AnD unKemPt MUstAches aNd kaWAII PhoNe cHaRMS.",
-            "img": "hanson_ngo.jpg"
+            "img": "Hanson Ngo.jpg"
+        },
+        {
+            "name": "J.w.",
+            "age": "23",
+            "blurb": "Vocaloids. Games.",
+            "img": "JW Council.png"
+        },
+        {
+            "name": "Zhu Li Moonstache",
+            "age": "23",
+            "blurb": "Occupation: Assistant Interests: Doing the thing",
+            "img": "Karen Tran.png"
+        },
+        {
+            "name": "Kristi",
+            "age": "23",
+            "blurb": "Hi Franklin!! psssss please match with me :)",
+            "img": "Kristi Horita.jpg"
         },
         {
             "name": "Lenny",
             "age": "23",
             "blurb": "I'm looking for someone to set balls for me to hit",
-            "img": "lenny_li.jpg"
+            "img": "Lenny Li.jpg"
+        },
+        {
+            "name": "Mason",
+            "age": "23",
+            "blurb": "i like it when people have hot brothers who can play league of legends with me",
+            "img": "Mason Park.jpg"
+        },
+        {
+            "name": "Matt",
+            "age": "23",
+            "blurb": "you can have fun all night with the both of us and Jenny will be watching",
+            "img": "Matt Ng.jpg"
+        },
+        {
+            "name": "Ryan",
+            "age": "23",
+            "blurb": "You must be taller than me. Love is the ability to stare into ones eyes for hours and think: God I look good reflected in those eyes. -Abraham Lincoln",
+            "img": "Ryan Mestre.jpg"
+        },
+        {
+            "name": "Sean",
+            "age": "23",
+            "blurb": "I like Virginia Tech grads and guys with mustaches. Playing Peach well in melee is a necessity.",
+            "img": "Sean Rice.jpg"
+        },
+        {
+            "name": "Seth",
+            "age": "23",
+            "blurb": "There's nothing I love more than to take long walks around a parking lot at 7am on a Saturday morning to look at cars.",
+            "img": "Seth McCann.jpg"
+        },
+        {
+            "name": "Suhas",
+            "age": "23",
+            "blurb": "'Let's put on our thinking caps! Hmm... hmmhmm, hmmhmm... Ah, I got it!' ~Lulu",
+            "img": "Suhas Patel.jpg"
         },
         {
             "name": "John",
             "age": "23",
-            "blurb": "watashi just wanaa man with a daijobu mustache, sumimasen",
-            "img": "john_tran.jpg"
+            "blurb": "watashi just wanna man with a daijobu mustache, ne ne?",
+            "img": "John Tran.jpg"
         },
         {
             "name": "Ms. Jessica",
             "age": "??",
             "blurb": "I love teaching my children",
             "img": "jessica.png"
-        }        
+        }
     ]
 }
