@@ -59,7 +59,7 @@ function unmatch() {
 
   clearInterval(dispID);
   var empty_set = available_profiles.length === 0 && empty;
-  available_profiles = profiles_copy.slice(0);
+  available_profiles = jQuery.extend(true, [], profiles_copy);
   shuffle(available_profiles);
 
   var total = document.getElementById('total');
