@@ -58,9 +58,8 @@ function unmatch() {
   shuffle(matched_profiles);
 
   clearInterval(dispID);
-  console.log(available_profiles);
   available_profiles = $.extend(true, [], profiles_copy);
-  console.log(available_profiles);
+  matched_profiles = [];
   shuffle(available_profiles);
 
   var total = document.getElementById('total');
