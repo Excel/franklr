@@ -58,8 +58,9 @@ function unmatch() {
   shuffle(matched_profiles);
 
   clearInterval(dispID);
-  var empty_set = available_profiles.length === 0 && empty;
-  available_profiles = jQuery.extend(true, [], profiles_copy);
+  console.log(available_profiles);
+  available_profiles = $.extend(true, [], profiles_copy);
+  console.log(available_profiles);
   shuffle(available_profiles);
 
   var total = document.getElementById('total');
@@ -67,8 +68,6 @@ function unmatch() {
   var ul = document.getElementById('matches');
   ul.innerHTML = "";
 
-  if (empty_set) {
-    addButtons();
-    updateProfile();
-  }
+  addButtons();
+  updateProfile();
 }

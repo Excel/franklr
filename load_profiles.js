@@ -5,7 +5,7 @@ $.getJSON("http://excel.github.io/franklr/profiles.json")
       available_profiles[key] = val;
     });
 
-    profiles_copy = jQuery.extend(true, [], available_profiles);
+    profiles_copy = $.extend(true, [], available_profiles);
     shuffle(available_profiles);
 
     updateProfile();
