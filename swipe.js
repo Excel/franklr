@@ -53,11 +53,11 @@ function addMatch() {
 }
 
 function unmatch() {
+  clearInterval(dispID);
   spam = null;
   spamFeed();
   shuffle(matched_profiles);
 
-  clearInterval(dispID);
   available_profiles = $.extend(true, [], profiles_copy);
   matched_profiles = [];
   shuffle(available_profiles);
