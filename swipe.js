@@ -59,8 +59,8 @@ function unmatch() {
 
   clearInterval(dispID);
   var empty_set = available_profiles.length === 0 && empty;
-  available_profiles = available_profiles.concat(matched_profiles);
-  matched_profiles = [];
+  available_profiles = profiles_copy.slice(0);
+  shuffle(available_profiles);
 
   var total = document.getElementById('total');
   total.innerHTML = '0 Matchstaches';
